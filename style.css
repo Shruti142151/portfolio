@@ -1,0 +1,159 @@
+body{
+ font-family: 'Segoe UI', sans-serif;
+ background-color: #f4f6f8;
+ color: #333333;
+ line-height: 1.6;
+ margin: 0;
+ padding: 0;
+}
+
+
+body>*{
+ max-width: 900px;
+ margin: 20px auto;
+ padding: 20px;
+ background-color: #ffffff;
+ border-radius: 12px;
+ box-shadow: 0 0 12px rgba(0,0,0,0,0.5);
+}
+
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #34495e !important;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 16px;
+  color: #34495e;
+}
+
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+
+nav{
+ background-color: #ffffff;
+ box-shadow: 0 2px 5px rgba(0,0,0,0,0.5);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+}
+
+.navbar{
+  list-style: none;
+ display: flex;
+ justify-content: center;
+ margin: 0;
+ padding: 10px 0;
+ gap: 30px;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+ }
+
+.navbar li a:hover{
+  color: #1e90ff;
+ }
+
+.profile-pic {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; 
+  border: 4px solid #2c3e50;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.resume-button {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.resume-button:hover {
+  background-color: #0d6efd;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+nav{
+ position: sticky;
+ top: 0;
+ background-color: white;
+ padding: 10px 0;
+ z-index: 100;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
