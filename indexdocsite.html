@@ -1,98 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DocSite - TaskTrackr Documentation</title>
-  <link rel="stylesheet" href="docsite-style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DocSite - Shruti Singh</title>
+  <link rel="stylesheet" href="docsite-style.css" />
 </head>
 <body>
-  <header>
-    <h1>TaskTrackr Documentation</h1>
-    <p class="tagline">Simple Task Management App – Documentation by Shruti Singh</p>
-  </header>
+  <aside>
+    <h2>📚 Docs Menu</h2>
+    <a href="#overview">Overview</a>
+    <a href="#features">Features</a>
+    <a href="#installation">Installation</a>
+    <a href="#usage">Usage</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#faq">FAQs</a>
+    <a href="#credits">Credits</a>
+  </aside>
 
-  <div class="container">
-    <nav class="sidebar">
+  <main>
+    <section id="overview">
+      <h1>TaskTrackr Documentation</h1>
+      <p>TaskTrackr is a basic to-do list web app designed to help users manage daily tasks efficiently. This documentation covers how the app works, its core features, and how to get started.</p>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
       <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#screenshots">Screenshots</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#future">Future Enhancements</a></li>
-        <li><a href="#credits">Credits</a></li>
+        <li>Create, edit, and delete tasks</li>
+        <li>Mark tasks as completed</li>
+        <li>Simple, clean user interface</li>
+        <li>Mobile responsive layout</li>
       </ul>
-    </nav>
+    </section>
 
-    <main class="content">
-      <section id="overview">
-        <h2>Overview</h2>
-        <p>TaskTrackr is a lightweight web-based to-do list app built using HTML, CSS, and JavaScript. It helps users manage daily tasks effectively through a clean, minimal interface.</p>
-      </section>
+    <section id="installation">
+      <h2>Installation</h2>
+      <p>No installation needed. Simply open the <code>index.html</code> file in any browser or host the app using GitHub Pages.</p>
+    </section>
 
-      <section id="features">
-        <h2>Key Features</h2>
-        <ul>
-          <li>Create, edit, and delete tasks</li>
-          <li>Mark tasks as completed</li>
-          <li>Responsive design for mobile and desktop</li>
-          <li>Simple UI focused on productivity</li>
-        </ul>
-      </section>
+    <section id="usage">
+      <h2>How to Use</h2>
+      <p>Click on the task input, type your task, and press "Add". Your task will appear in the list. You can mark it as done or remove it when complete.</p>
+    </section>
 
-      <section id="installation">
-        <h2>Installation</h2>
-        <p>No installation required. Simply open the <code>index.html</code> file in a web browser or host it using GitHub Pages.</p>
-      </section>
+    <section id="screenshots">
+      <h2>Screenshots</h2>
+      <p>Below are preview images of the TaskTrackr interface:</p>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <img src="screenshot1.jpg" alt="Task List UI" width="300" height="auto" style="border-radius: 10px; border: 1px solid #ccc;" />
+        <img src="screenshot2.jpg" alt="Add Task UI" width="300" height="auto" style="border-radius: 10px; border: 1px solid #ccc;" />
+        <!-- Replace with your own image names -->
+      </div>
+    </section>
 
-      <section id="usage">
-        <h2>How to Use</h2>
-        <ol>
-          <li>Type your task in the input box</li>
-          <li>Click "Add" to insert it into the list</li>
-          <li>Click the checkbox to mark it completed</li>
-          <li>Use the trash icon to delete tasks</li>
-        </ol>
-      </section>
+    <section id="faq">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <ul>
+        <li><strong>Q:</strong> Is it mobile-friendly?<br/><strong>A:</strong> Yes, it adjusts layout based on device width.</li>
+        <li><strong>Q:</strong> Can I edit a task after adding it?<br/><strong>A:</strong> You can delete and re-add it. Edit support will be added later.</li>
+        <li><strong>Q:</strong> Do I need to install anything?<br/><strong>A:</strong> No, it's a fully static web app. Just open it in a browser.</li>
+        <li><strong>Q:</strong> Can I share my task list?<br/><strong>A:</strong> You can host the site online and share the link.</li>
+        <li><strong>Q:</strong> Is my data saved?<br/><strong>A:</strong> Currently, no. But you can use local storage or backend later.</li>
+      </ul>
+    </section>
 
-      <section id="screenshots">
-        <h2>Screenshots</h2>
-        <p>Below are preview images of the TaskTrackr interface:</p>
-        <img src="screenshot1.png" alt="TaskTrackr Main UI" style="max-width:100%; margin-bottom: 15px;">
-        <img src="screenshot2.png" alt="TaskTrackr Completed Task UI" style="max-width:100%;">
-        <p><em>*You can replace these placeholder images with your own screenshots.</em></p>
-      </section>
+    <section id="credits">
+      <h2>Credits</h2>
+      <p>Developed by Shruti Singh as part of her web development learning journey. Styled using HTML and CSS only.</p>
+    </section>
 
-      <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <h4>Q1: Does it store my data permanently?</h4>
-        <p>No, TaskTrackr does not use a backend or local storage. Refreshing the page resets tasks.</p>
-
-        <h4>Q2: Can I use it on my phone?</h4>
-        <p>Yes! It is fully responsive and works on mobile browsers.</p>
-      </section>
-
-      <section id="future">
-        <h2>Future Enhancements</h2>
-        <ul>
-          <li>Dark mode toggle</li>
-          <li>Local storage support</li>
-          <li>Multiple list support</li>
-          <li>Deadline reminders</li>
-        </ul>
-      </section>
-
-      <section id="credits">
-        <h2>Credits</h2>
-        <p>Developed by <strong>Shruti Singh</strong> as part of her learning journey in web development. Built using only HTML and CSS for front-end structure and design.</p>
-      </section>
-    </main>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Shruti Singh | All Rights Reserved</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Shruti Singh | All Rights Reserved</p>
+    </footer>
+  </main>
 </body>
 </html>
