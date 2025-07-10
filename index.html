@@ -55,8 +55,7 @@
 <h3>Upcoming: Project Listing Page using Flexbox/Grid</h3>
 <p>I'm planning to build a dedicated projects page using HTML and CSS Flexbox or Grid layout.</p>
 
-<a href="projects.html" class="view-all-projects">View All Projects</a>
-
+<a class="resume-button" href="projects.html" target="_blank">View All Projects</a>
   </section>  <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: shrutisinghrajput142@gmail.com</p>
@@ -66,12 +65,12 @@
       <a href="https://github.com/Shruti142151" target="_blank">GitHub</a>
     </p><a class="resume-button" href="Resume%20Shruti.pdf" download>Download My Resume</a>
 
-<h3>Send Me a Message (Coming Soon)</h3>
-<form class="contact-form">
-  <input type="text" placeholder="Your Name" disabled>
-  <input type="email" placeholder="Your Email" disabled>
-  <textarea placeholder="Your Message" disabled></textarea>
-  <button disabled>Submit</button>
+<h3>Send Me a Message</h3>
+<form class="contact-form" action="https://formspree.io/f/xwkgbjzq" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Submit</button>
 </form>
 
   </section>
