@@ -10,11 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #0e1a2b;
     }
 
     header {
-      background-color: #2c3e50;
+      background-color: #0e1a2b;
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -25,70 +25,61 @@
       font-size: 32px;
     }
 
-    .dashboard {
-      padding: 40px;
-      background-color: #f4f4f4;
+    header p {
+      font-size: 16px;
+      color: #ccc;
     }
 
-    .card-grid {
+    .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      padding: 40px;
     }
 
-    .card {
-      background: white;
+    .grid-item {
+      background-color: #f5f5f5;
+      border-radius: 20px;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      color: #333;
       position: relative;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
     }
 
-    .card:hover {
+    .grid-item:hover {
       transform: translateY(-5px);
     }
 
-    .card h3 {
+    .grid-item h3 {
       margin: 0;
-      font-size: 18px;
-      color: #2c3e50;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .grid-item p {
+      font-size: 14px;
+      margin-top: 10px;
     }
 
     .arrow {
       position: absolute;
-      top: 20px;
+      bottom: 20px;
       right: 20px;
-      font-size: 22px;
+      font-size: 24px;
       text-decoration: none;
-      color: #2c3e50;
-      transition: color 0.3s;
+      color: #333;
     }
 
     .arrow:hover {
-      color: #1abc9c;
-    }
-
-    section.content {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-top: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-
-    section.content h2 {
-      color: #2980b9;
+      color: #007bff;
     }
 
     footer {
+      background-color: #0e1a2b;
+      color: white;
       text-align: center;
       padding: 20px;
-      background-color: #2c3e50;
-      color: white;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -99,72 +90,55 @@
     <p>Explore my work and journey</p>
   </header>
 
-  <section class="dashboard">
-    <div class="card-grid">
+  <div class="grid-container">
 
-      <div class="card">
-        <h3>Home</h3>
-        <a href="index.html" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>About Me</h3>
-        <a href="#about" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>My Project Skills</h3>
-        <a href="projects.html" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>Tools I Use</h3>
-        <a href="#tools" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>Blog Content</h3>
-        <a href="https://shrutiblog0.wordpress.com" target="_blank" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>Contact Me</h3>
-        <a href="#contact" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>Achievements</h3>
-        <a href="#achievements" class="arrow">→</a>
-      </div>
-
-      <div class="card">
-        <h3>My Portfolio</h3>
-        <a href="https://shruti142151.github.io/portfolio/" target="_blank" class="arrow">→</a>
-      </div>
-
+    <div class="grid-item" style="background-color: #ffffff;">
+      <h3>MY PORTFOLIO</h3>
     </div>
-  </section>
 
-  <!-- Placeholder content sections -->
-  <section id="about" class="content">
-    <h2>About Me</h2>
-    <p>This section talks about who I am, my background, and what drives me.</p>
-  </section>
+    <div class="grid-item" style="background-color: #f65f94;">
+      <h3>HOME</h3>
+      <p>Welcome to my digital portfolio</p>
+      <a href="index.html" class="arrow">→</a>
+    </div>
 
-  <section id="tools" class="content">
-    <h2>Tools I Use</h2>
-    <p>From Canva and ChatGPT to Google Sheets and VS Code, here are the tools I work with.</p>
-  </section>
+    <div class="grid-item" style="background-color: #f65f94;">
+      <h3>About Me</h3>
+      <p>Know my background, goals & passion</p>
+      <a href="#about" class="arrow">→</a>
+    </div>
 
-  <section id="contact" class="content">
-    <h2>Contact Me</h2>
-    <p>You can reach me at shrutisinghrajput142@gmail.com or via LinkedIn/Instagram.</p>
-  </section>
+    <div class="grid-item" style="background-color: #39c3f0;">
+      <h3>My Projects</h3>
+      <p>Explore my creative and technical work</p>
+      <a href="projects.html" class="arrow">→</a>
+    </div>
 
-  <section id="achievements" class="content">
-    <h2>Achievements</h2>
-    <p>From academic awards to successful internships, this is where I highlight key milestones.</p>
-  </section>
+    <div class="grid-item" style="background-color: #39c3f0;">
+      <h3>Tools I Use</h3>
+      <p>Tools and languages I work with daily</p>
+      <a href="#tools" class="arrow">→</a>
+    </div>
+
+    <div class="grid-item" style="background-color: #39c3f0;">
+      <h3>Blog/Content</h3>
+      <p>Articles, tips, and personal insights</p>
+      <a href="https://shrutiblog0.wordpress.com" target="_blank" class="arrow">→</a>
+    </div>
+
+    <div class="grid-item" style="background-color: #fca0c0;">
+      <h3>Contact Me</h3>
+      <p>Let’s connect or work together</p>
+      <a href="#contact" class="arrow">→</a>
+    </div>
+
+    <div class="grid-item" style="background-color: #fca0c0;">
+      <h3>Achievements</h3>
+      <p>Recognitions and milestones</p>
+      <a href="#achievements" class="arrow">→</a>
+    </div>
+
+  </div>
 
   <footer>
     <p>&copy; 2025 Shruti Singh | All Rights Reserved</p>
