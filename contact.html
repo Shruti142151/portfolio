@@ -4,19 +4,89 @@
   <meta charset="UTF-8">
   <title>Contact Me - Shruti Singh</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #1a4d80;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #1e90ff;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0d6efd;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Contact Me</h1>
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>Have a question, idea, or just want to connect? Fill out the form below — I'd love to hear from you!</p>
 
-  <p>If you'd like to connect, collaborate, or simply say hello, feel free to reach out to me through any of the platforms below:</p>
-
-  <ul>
-    <li><strong>Email:</strong> shrutisinghrajput142@gmail.com</li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shruti-singh-368960289" target="_blank">View Profile</a></li>
-    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/my__quiet__chaos/" target="_blank">@my_quiet_chaos</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/Shruti142151" target="_blank">View Projects</a></li>
-  </ul>
-
-  <p>You can also leave a message using the contact form on my main portfolio page.</p>
+    <form action="https://getform.io/f/anlxgzea" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </body>
 </html>
